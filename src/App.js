@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import LoginButton from './auth/login-button'
+import LogoutButton from './auth/logout-button'
+import SignupButton from './auth/signup-button'
+import Profile from './auth/profile'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <LoginButton />
+      </div>
+      <div>
+        <SignupButton />
+      </div>
+      <div>
+        <LogoutButton />
+      </div>
+      <div>
+        <Profile />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
